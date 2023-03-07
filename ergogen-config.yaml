@@ -1,0 +1,49 @@
+points:
+  key:
+    padding: cy
+  zones:
+    main:
+      anchor:
+        rotate: -8
+      rows:
+        top:
+        mid:
+        bot:
+      columns:
+        pinky:
+          key.stagger: 12
+          key.spread: cx
+        ring:
+          key.spread: cx
+          key.origin: [-12, -19]
+          key.stagger: 12
+          key.splay: -5
+        mid:
+          key.spread: cx
+          key.stagger: 8
+        index:
+          key.spread: cx
+          key.stagger: -10
+        inner:
+          key.spread: cx
+          key.stagger: -3
+    thumbfan:
+      anchor:
+        ref: main_inner_bot
+        shift: [-30, -58]
+        rotate: 8
+      rows:
+        hi:
+      columns:
+        near:
+        home:
+          key.spread: 20
+          key.splay: -8
+        far:
+          key.spread: 20.4
+          key.splay: -12
+          key.origin: [-9.5, -1]
+  rotate: -12
+  mirror:
+    ref: main_pinky_mid
+    distance: 180
