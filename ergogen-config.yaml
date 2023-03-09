@@ -33,7 +33,7 @@ points:
     thumbfan:
       anchor:
         ref: main_inner_bot
-        shift: [-30, -58]
+        shift: [-30, -56]
         rotate: 8
       rows:
         hi:
@@ -42,14 +42,19 @@ points:
         home:
           key.spread: 20
           key.splay: -8
+          key.origin: [-7, 0]
         far:
           key.spread: 20.4
           key.splay: -12
           key.origin: [-9.5, -1]
+        farther:
+          key.spread: 20
+          key.splay: -12
+          key.origin: [-11, -2]
   rotate: -12
   mirror:
     ref: main_pinky_mid
-    distance: 180
+    distance: 192
 
 pcbs:
   moth:
@@ -70,6 +75,6 @@ pcbs:
           from: "{{colrow}}"
           to: "{{row_net}}"
         adjust:
-          rotate: 90
-          shift: [-7.8, -3.5]
+          rotate: 180
+          shift: [0, 3.2]
 
