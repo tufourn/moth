@@ -10,12 +10,15 @@ points:
         mid:
         bot:
       columns:
+        outer:
+          rows:
+            top.skip: true
         pinky:
           key.stagger: 12
           key.spread: cx
         ring:
           key.spread: cx
-          key.origin: [-12, -19]
+          key.origin: [-12, -13]
           key.stagger: 12
           key.splay: -5
         mid:
@@ -47,3 +50,26 @@ points:
   mirror:
     ref: main_pinky_mid
     distance: 180
+
+pcbs:
+  moth:
+    footprints:
+      choc_hotswap:
+        what: choc
+        where: true
+        params:
+          from: "{{colrow}}"
+          to: "{{column_net}}"
+          keycaps: true
+          reverse: false
+          hotswap: true
+      diodes:
+        what: diode
+        where: true
+        params:
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+        adjust:
+          rotate: 90
+          shift: [-7.8, -3.5]
+
